@@ -1,0 +1,12 @@
+.logo {
+    outline: transparent;
+    width: 215px;
+    height: 49px;
+    display: block;
+
+    &__image {
+        object-fit: cover;
+        width: 100%;
+        display: block;
+    }
+}
