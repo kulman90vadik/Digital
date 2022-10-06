@@ -1,4 +1,19 @@
-$(function(){
+window.addEventListener("load", function(){
+
+
+    new Swiper('.company__swiper', {
+        wrapperClass: 'company__wrapper',
+        slideClass: 'company__text',
+        direction: "vertical",
+        pagination: {
+            el: '.company__pagination',
+            clickable: true,
+            
+        },
+    });
+
+
+
 // window.addEventListener("load", function(){
 
     // $('.header__btn').on('click', function(){

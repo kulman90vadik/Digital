@@ -1,0 +1,57 @@
+.company {
+    background-color: $grey-lite;
+    display: flex;
+    align-items: center;
+    padding-right: max(15px, calc(100% - 1215px) / 2);
+    margin-bottom: 90px;
+    &__bg {
+        width: calc(100% - 500px);
+        min-height: 940px;
+        margin-right: 107px;
+        @include bg;
+    }
+
+    &__right {
+        flex-shrink: 0;
+        max-width: 500px;
+        width: 100%;
+        text-align: right;
+
+        position: relative;
+    }
+
+    &__swiper {
+        height: 300px;
+        width: 100%;
+        // position: relative;
+        overflow: hidden;
+    }
+
+    &__pagination {
+        position: absolute;
+        z-index: 5;
+    }
+    
+    & .swiper-pagination-bullets {
+        right: -50px;
+
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        color: $grey-dark;
+        font-weight: 500;
+        p {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+        
+    }
+
+}
