@@ -1,0 +1,33 @@
+.portfolio  {
+    position: relative;
+    padding-top: 90px;
+    &__title {
+        margin-bottom: 70px;
+    }
+
+    &__link {
+        margin-right: 30px;
+    }
+
+    &__swiper {
+        overflow: hidden;
+        height: 764px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    // &__wrapper {
+
+    // }
+
+    &__slide {
+        padding-top: 200px;
+        @include bg;
+        height: 100%;
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: end;
+    }
+}

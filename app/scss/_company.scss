@@ -1,9 +1,9 @@
 .company {
+    position: relative;
     background-color: $grey-lite;
     display: flex;
     align-items: center;
     padding-right: max(15px, calc(100% - 1215px) / 2);
-    margin-bottom: 90px;
     &__bg {
         width: calc(100% - 500px);
         min-height: 940px;
@@ -16,8 +16,6 @@
         max-width: 500px;
         width: 100%;
         text-align: right;
-
-        position: relative;
     }
 
     &__swiper {
@@ -27,19 +25,7 @@
         overflow: hidden;
     }
 
-    &__pagination {
-        position: absolute;
-        z-index: 5;
-    }
-    
-    & .swiper-pagination-bullets {
-        right: -50px;
-
-    }
-
     &__title {
-        font-weight: 500;
-        font-size: 48px;
         margin-bottom: 60px;
     }
 

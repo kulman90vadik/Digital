@@ -12,6 +12,17 @@ window.addEventListener("load", function(){
         },
     });
 
+    new Swiper('.portfolio__swiper', {
+        wrapperClass: 'portfolio__wrapper',
+        slideClass: 'portfolio__slide',
+        direction: "vertical",
+        pagination: {
+            el: '.portfolio__pagination',
+            clickable: true,
+            
+        },
+    });
+
 
 
 // window.addEventListener("load", function(){

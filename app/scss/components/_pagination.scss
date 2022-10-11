@@ -1,0 +1,9 @@
+.pagination {
+    position: absolute;
+    z-index: 5;
+
+    &.swiper-pagination-bullets {
+        right: 6%;
+    }
+}
+
