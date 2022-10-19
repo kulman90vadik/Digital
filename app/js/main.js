@@ -24,6 +24,18 @@ window.addEventListener("load", function(){
     });
 
 
+    // feedback__content
+    let feedbackContent = document.querySelectorAll('.feedback__content');
+    feedbackContent.forEach(element => {
+        element.addEventListener('click', function(){
+            if(element.classList.length == 1) {
+                feedbackContent.forEach(element => {
+                    element.classList.remove('feedback__content--active');
+                });    
+                this.classList.add('feedback__content--active');
+            }
+        });
+    });
 
 // window.addEventListener("load", function(){
 

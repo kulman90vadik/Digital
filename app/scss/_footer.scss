@@ -1,0 +1,15 @@
+.footer {
+    background-color: #17181C;
+    padding: 100px 0;
+
+    &__list {
+        padding-bottom: 45px;
+        border-bottom: 1px solid #595959;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        
+    }
+}

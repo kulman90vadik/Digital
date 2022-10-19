@@ -1,0 +1,143 @@
+.service {
+    background-color: #1a1f25;
+    padding: 90px 0;
+
+    &__title {
+        margin-bottom: 80px;
+        color: $white;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 243px;
+        border: 1px solid #595959;
+        width: 100%;
+        height: 210px;
+        overflow: hidden;
+        &:hover {
+            .service__hidden {
+                transform: translateY(-100%);
+                transition: transform 0.3s ease-in;
+            }
+            .service__info {
+                transform: translateY(-100%);
+                transition: transform 0.3s ease-in;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        transition: transform 0.3s ease-in;
+    }
+
+    &__description {
+        display: block;
+        position: relative;
+        padding-top: 70px;
+        color: $white;
+        font-weight: 500;
+        text-align: center;
+        @include lineClamp;
+        -webkit-line-clamp: 2;
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            @include bg;
+        }
+        &--level {
+            &::after {
+                background-image: url(../images/level.png);
+            }
+        }
+        &--quality {
+            &::after {
+                background-image: url(../images/quality.png);
+            }
+        }
+        &--time {
+            &::after {
+                background-image: url(../images/time.png);
+            }
+        }
+        &--claim {
+            &::after {
+                background-image: url(../images/claim.png);
+            }
+        }
+        &--automation {
+            &::after {
+                background-image: url(../images/automation.png);
+            }
+        }
+        &--desing {
+            &::after {
+                background-image: url(../images/desing.png);
+            }
+        }
+        &--code {
+            &::after {
+                background-image: url(../images/code.png);
+            }
+        }
+        &--commercial {
+            &::after {
+                background-image: url(../images/commercial.png);
+            }
+        }
+        &--commerc {
+            &::after {
+                background-image: url(../images/commerc.png);
+            }
+        }
+        &--seo {
+            &::after {
+                background-image: url(../images/seo.png);
+            }
+        }
+        &--net {
+            &::after {
+                background-image: url(../images/net.png);
+            }
+        }
+    }
+
+
+    &__hidden {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    &__link {
+        padding: 11px 20px;
+        color: $white;
+        border-color: $white;
+        & .link__icon {
+            fill: $white;
+        }
+        &:hover {
+            color: #b41a1a; 
+            & .link__icon {
+                fill: #b41a1a; 
+            }
+        }
+    }
+}

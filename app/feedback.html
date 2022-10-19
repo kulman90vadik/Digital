@@ -1,0 +1,69 @@
+<section class="feedback">
+    <div class="container feedback__container">
+        <div class="feedback__requisition">
+            <h2 class="title feedback__title">Заявка</h2>
+            <form class="feedback__form" action="#">
+                <label for="name" class="visually-hidden">name</label>
+                <input class="feedback__input feedback__input--name" type="text" name="name" id="name" placeholder="Ваше имя">
+                <label for="email" class="visually-hidden">E-mail</label>
+                <input class="feedback__input feedback__input--email" type="email" name="email" id="email" placeholder="Ваш Email">
+                <label for="text" class="visually-hidden">text</label>
+                <textarea class="feedback__input feedback__input--textarea name="text" id="text" placeholder="Сообщение"></textarea>
+                <div class="feedback__link">
+                    <input class="feedback__submit btn-reset" type="submit" value="Отправить">
+                    <svg class="feedback__icon" aria-label="icon arrow">
+                        <use xlink:href="images/sprite.svg#arrow-right"></use>
+                    </svg>
+                </div>
+            </form>
+        </div>
+
+        <div class="feedback__suggestion">
+            <h2 class="title feedback__title">Спец предложения</h2>
+            <ul class="feedback__list">
+                <li class="feedback__item">
+                    <div class="feedback__content">
+                        <span class="feedback__subtitle">Landing Page</span>
+                        <p class="feedback__text">
+                            продающая посадочная страница. 
+                        </p>
+                        <span class="feedback__preis feedback__preis--old">
+                            150 000
+                            <span>&#8376;</span>
+                        </span>
+                        <span class="feedback__preis feedback__preis--new">
+                            150 000
+                            <span>&#8376;</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="feedback__item">
+                    <div class="feedback__content">
+                        <span class="feedback__subtitle">Бизнес сайт</span>
+                        <p class="feedback__text">
+                            Корпоративный сайт  
+                        </p>
+                        <span class="feedback__preis feedback__preis--old">
+                            150 000
+                            <span>&#8376;</span>
+                        </span>
+                        <span class="feedback__preis feedback__preis--new">
+                            150 000
+                            <span>&#8376;</span>
+                        </span>
+                    </div>    
+                </li>
+                <li class="feedback__item">
+                    <div class="feedback__content feedback__content--active">
+                        <span class="feedback__subtitle">Контекстная
+                            реклама</span>
+                        <p class="feedback__text">
+                            Запуск контекстной рекламы на месяц 
+                        </p>
+                        <span class="feedback__preis feedback__preis--new">Бесплатно</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
