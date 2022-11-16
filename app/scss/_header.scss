@@ -4,9 +4,16 @@
     width: 100%;
     padding: 25px 0;
     top: 0;
+    transition: background-color 0.3s ease-in, padding 0.3s ease-in;
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &--active {
+        background-color: $grey;
+        padding: 10px 0;
+        transition: background-color 0.3s ease-in, padding 0.3s ease-in;
     }
 }

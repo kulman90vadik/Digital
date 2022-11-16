@@ -33,6 +33,8 @@
         color: $grey-dark;
         font-weight: 500;
         p {
+            @include lineClamp;
+            -webkit-line-clamp: 6;
             &:not(:last-child) {
                 margin-bottom: 40px;
             }

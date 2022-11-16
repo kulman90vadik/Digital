@@ -1,15 +1,62 @@
 .footer {
     background-color: #17181C;
     padding: 100px 0;
-
+    color: #e6e6e6;
     &__list {
         padding-bottom: 45px;
+        margin-bottom: 46px;
         border-bottom: 1px solid #595959;
         display: flex;
         justify-content: space-between;
     }
 
     &__item {
-        
+        max-width: 266px;
+        width: 100%;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    &__subtitle {
+        color: #fff;
+        margin-bottom: 33px;
+        font-weight: 500;
+        @include lineClamp;
+        -webkit-line-clamp: 1;
+        font-size: 20px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        p {
+            @include lineClamp;
+            -webkit-line-clamp: 4;            
+        }
+    }
+
+    &__link {
+        display: block;
+        @include lineClamp;
+        -webkit-line-clamp: 1;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        transition: color 0.3s ease-in-out;
+        &:hover {
+            color: $grey-dark;
+        }
+        &:active {
+            color: $grey;
+        }
+        &:focus {
+            color: $grey-lite;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }

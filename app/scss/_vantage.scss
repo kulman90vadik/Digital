@@ -19,6 +19,8 @@
         position: relative;
         font-weight: 500;
         color: #1A1F25;
+        @include lineClamp;
+        -webkit-line-clamp: 6;
         &:nth-child(even) {
             margin-bottom: 60px;
         }
